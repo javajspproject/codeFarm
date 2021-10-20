@@ -1,0 +1,21 @@
+{
+  "ecmaVersion": 5,
+  "plugins": {
+    "browser-extension": {
+      
+    },
+    "jquery-extension": {
+      
+    },
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    }
+  },
+  "libs": [
+    "browser",
+    "jquery"
+  ]
+}

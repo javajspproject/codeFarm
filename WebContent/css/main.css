@@ -1,0 +1,415 @@
+@CHARSET "UTF-8";
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img{
+display: block;
+margin: 0 auto;
+}
+/* 별만들기  */
+.rating_star{
+	position: relative;
+    width: 115px;
+    display: inline-block;
+    font-size: 0em;
+}
+.star_solid{
+	display: inline;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+}
+.rating_star svg, .rating_star i {
+	font-family: "Font Awesome 5 Free";
+	color: #fdcc11;
+    width: 1rem;
+    height: 1rem;
+    font-size: 20px;
+    display: inline;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* 별 만들기 */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%; /* 1077*320 */ /*1287*192*/
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-container .sld {
+width: 1077px;
+height: 320px;
+
+}
+
+
+/* Next & previous buttons */
+.prev, .next, .dots {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dots{
+ left: 5%;
+ top: 90%;
+}
+
+/* Caption text */
+/* .text { */
+/*   color: #f2f2f2; */
+/*   font-size: 15px; */
+/*   padding: 8px 12px; */
+/*   position: absolute; */
+/*   left: 5%; */
+/*   top: 10%; */
+/*   width: 50%; */
+/*   text-align: left; */
+/* } */
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	/* 모바일   */
+  .slideshow-container{	width: 100%;	height: 100%;}
+  .slideshow-container .sld {	width: 100%;	height: 100%;}
+  
+  
+}
+
+@media screen and (max-width: 760px) {
+#lec {
+    width: 85%!important;}
+.card{
+	margin: 0 auto;}
+
+}
+@media screen and (max-width: 500px) {
+	/* 웹 가장작은 사이즈, 카드2장 나오도록 */
+#lec {
+    width: 100%!important;}
+.card{
+	width:47%; height: 47%; 
+	margin: 0;
+	font-size: 13px;}
+.card img {
+	width: 100% !important; 
+/* 	height: 47%!important;  */
+	margin: 0;}
+
+.card h2 {
+/*     font-size: 1rem !important; */
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+/*     height: 2.8rem; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: pre-wrap;
+}
+.price {
+    margin-left: 68% !important;
+}
+
+#more,#blg {
+width: 90% !important;
+margin: 1rem !important;
+}
+
+.Bwrap,.interest{
+margin-left: 0 !important;
+}
+	
+}
+@media screen and (max-width: 480px) {
+	/* 가장작은 사이즈, 카드1장 나오도록 */
+#lec {
+    width: 70%!important;
+    margin: 0 auto;}
+.card{
+	min-width:225px;
+	width:85%;
+    height: 50%; 
+	font-size: 13px;}
+.card img {
+	width: 100% !important; 
+	height: 50% !important; 
+	}
+
+.card h2 {
+    font-size: 1rem !important;
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: pre-wrap;
+}
+.title {
+    width: 100% !important;
+    font-size: 22px !important;
+}
+
+#more,#blg {
+width: 90% !important;
+margin: 1rem !important;
+}
+
+.Bwrap,.interest{
+margin-left: 0 !important;
+}
+
+}
+/*  */ /*  *//*  *//*  *//*  *//*  *//*  *//*  *//* 프로덕트 */
+
+body{margin: 0;}
+
+#lec{
+width: 70%;
+margin: 60px auto;
+text-align: left;
+}
+
+.title {
+	color: #1E1E1E;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 600;
+    flex: none;
+    width: 50%; /* 여백조절 38*/
+}
+
+.title a {
+text-decoration: none;
+font-size:1rem;
+color: #6E6F69;
+margin-left: 0.5rem;
+font-weight: normal;
+}
+
+.card {
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;			
+  height:350px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: top;
+  font-family: arial;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.card img{
+width:250px;
+height: 165px;
+}
+
+.card h2{
+color:#454545;
+font-size: 1.1rem;
+text-align: left;
+margin: 1rem 0.8rem;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+white-space: pre-wrap;
+}
+
+.card p{
+text-align: left;
+margin-left: 0.8rem;
+}
+
+.price {
+  font-weight: 700;
+  color: #175cbe;
+  font-size: 16px;
+/*   margin-right: 0.5em; */
+  position: absolute;
+  right: 0;
+}
+
+
+.mg-l50 i {
+color: #FD8E6A;
+font-size: 20px;
+text-decoration: none;
+}
+.card i:hover {
+  opacity: 0.7;
+}
+
+.card-in{
+position: absolute;
+bottom: 10px;
+padding: 0.5rem 0.8rem;
+text-align: left;
+width: 100%;
+}
+
+.mg-l50{
+right: 10px;
+position: absolute;
+}
+.mg-t10{
+margin-top: 10px;
+position: relative;
+}
+
+/*STAR=ck*/
+.checked {  color: orange;}
+
+.tag:not(body) {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #454545;
+    display: inline-flex;
+    font-size: .75rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: .75em;
+    padding-right: .75em;
+    white-space: nowrap;
+    background-color:hsl(155,40%,87%);
+}
+
+/*  */ /*  *//*  *//*  *//*  *//*  *//*  *//*  *//* 컨텐츠 */
+
+
+body{
+margin: 0;
+}
+
+#more,#blg,#rdm {
+width: 70%;
+margin: 3rem auto;
+text-align: left;
+}
+
+.title>a{
+color: 3B3B38;
+}
+
+.card-c {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    height: 330px;
+    margin: 1.5rem;
+    text-align: center;
+    vertical-align: top;
+    font-family: arial;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card-c img{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* width:280px; */
+min-width :350px;
+height: 230px;
+}
+
+.card-c h2{
+color:#454545;
+font-size: 1.2rem;
+text-align: left;
+margin-left: 0.8rem;
+}
+
+
+.text-in{
+/* padding: 1rem 0.8rem; */
+text-align: left;
+ padding: 0 1rem;
+}
+
+.interest img{
+width:65px;
+height: 45px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 5px;
+text-align: center;
+vertical-align: top;
+font-family: arial;
+display: inline-block;
+border-radius: 15px;
+}
+
+.Bwrap{
+	margin-left: 4%;
+}
+
+.interest{
+	margin-left: 9%;
+}
